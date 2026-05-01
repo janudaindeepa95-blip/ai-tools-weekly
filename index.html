@@ -5,68 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Tools Weekly</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#tools">Tools</a></li>
-                <li><a href="#newsletter">Newsletter</a></li>
-                <li><a href="#affiliate">Affiliate Program</a></li>
-                <li><a href="#footer">Contact</a></li>
-            </ul>
-        </nav>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">🤖 AI Tools Weekly</a>
+            <div class="nav-links">
+                <a href="#tools">Tools</a>
+                <a href="#newsletter">Subscribe</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Discover AI Tools That Actually Work</h1>
+            <p>Join <span id="subscriber-count">2,347</span> smart subscribers.</p>
+            <div class="cta-form">
+                <input type="email" id="email-input" placeholder="your.email@example.com" required>
+                <button onclick="subscribe()">Get Free AI Tools →</button>
+            </div>
+        </div>
     </header>
 
-    <section id="hero">
-        <h1>Welcome to AI Tools Weekly</h1>
-        <p>Your weekly source for the best AI tools around.</p>
-        <form id="signup-form">
-            <input type="email" placeholder="Enter your email" required>
-            <button type="submit">Sign Up</button>
-        </form>
-    </section>
-
-    <section id="tools">
-        <h2>Featured Tools</h2>
-        <div class="tools-grid">
-            <div class="tool">
-                <h3>Tool 1</h3>
-                <p>Description of Tool 1.</p>
+    <section id="tools" class="tools-section">
+        <div class="container">
+            <h2>This Week's Top AI Tools</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-category">💼 Productivity</div>
+                    <h3>Notion AI</h3>
+                    <p>AI-powered workspace.</p>
+                    <div class="tool-rating">★★★★★</div>
+                    <a href="#" class="tool-link">Learn More →</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-category">🎨 Design</div>
+                    <h3>Midjourney</h3>
+                    <p>Create AI images.</p>
+                    <div class="tool-rating">★★★★☆</div>
+                    <a href="#" class="tool-link">Learn More →</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-category">📝 Writing</div>
+                    <h3>Jasper AI</h3>
+                    <p>Write faster with AI.</p>
+                    <div class="tool-rating">★★★★☆</div>
+                    <a href="#" class="tool-link">Learn More →</a>
+                </div>
             </div>
-            <div class="tool">
-                <h3>Tool 2</h3>
-                <p>Description of Tool 2.</p>
-            </div>
-            <div class="tool">
-                <h3>Tool 3</h3>
-                <p>Description of Tool 3.</p>
-            </div>
-            <div class="tool">
-                <h3>Tool 4</h3>
-                <p>Description of Tool 4.</p>
-            </div>
-            <!-- Add more tools as needed -->
         </div>
     </section>
 
-    <section id="newsletter">
-        <h2>Subscribe to our Newsletter</h2>
-        <form>
-            <input type="email" placeholder="Enter your email" required>
-            <button type="submit">Subscribe</button>
-        </form>
+    <section id="newsletter" class="newsletter-section">
+        <div class="container">
+            <h2>Join Our Free Newsletter</h2>
+            <div class="cta-form">
+                <input type="email" id="email-input2" placeholder="Enter your email" required>
+                <button onclick="subscribe()">Subscribe →</button>
+            </div>
+        </div>
     </section>
 
-    <section id="affiliate">
-        <h2>Affiliate Program</h2>
-        <p>Join our affiliate program to earn commissions.</p>
-    </section>
-
-    <footer id="footer">
-        <p>&copy; 2026 AI Tools Weekly. All rights reserved.</p>
-        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <p>&copy; 2026 AI Tools Weekly</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
